@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>HTML</title>
+  
+  <!-- HTML -->
+  
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<style>
+body {
+    font-size: 15pt;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display:flex;
+    align-items: center;
+    background: #0b1522;
+    justify-content: center;
+    color: white
+}
+.heart{
+  height: 100px;
+  width:100px;
+  background: #f20044;
+  box-shadow: -10px 10px 90px #f20044;
+  position:relative;
+  transform: rotate(-45deg);
+  animation:heart 0.6s linear infinite
+}
+.heart:before{
+  content: '';
+  position: absolute;
+  height:100px;
+  width:100px;
+  background: #f20044;
+  top: -50%;
+  border-radius: 50px;
+    box-shadow: -10px -10px 90px #f20044;
+}
+@keyframes heart{
+  0%{ transform: rotate(-45deg) scale(1.07)
+    
+  }
+  80% {
+    transform: rotate(-45deg) scale(1.0)
+  }
+  100% {
+    transform: rotate(-45deg) scale(0.8)
+  }
+}
+.heart:after{
+  content: '';
+  position: absolute;
+  height:100px;
+  width:100px;
+  background: #f20044;
+  right:-50%;
+  border-radius: 50px;
+    box-shadow: 10px 10px 90px #f20044;
+}
+</style>
+<body>
+
+ 
+   
+ 
+ <div class="heart">
+  
+ </div>
+ 
+   <section>
+ 
+ 
+     <marquee behavior="Slide" direction="Right"><h2>Ay, I love you!</h2></marquee>
+   </section>
+ 
+  <!-- Project -->
+  <script src="main.js"></script>
+</body>
+</html>
